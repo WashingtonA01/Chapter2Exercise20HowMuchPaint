@@ -13,17 +13,20 @@ using namespace std;
 
 int main()
 {
+
+    double fenceheight, fencelength, coats; 
     double ftpergallon = 340;
-    double fenceheight = 6;
-    double fencelength = 100;
-    double coats = 2;
-    double gallonstotal = (fenceheight * fencelength * coats) / ftpergallon;
 
     cout << "How many feet per gallon does the paint cover? " << ftpergallon << endl;
-    cout << "How many feet total is the fence? " << fenceheight * fencelength << endl;
-    cout << "How many coats will you use? " << coats << endl;
+    cout << "How many feet long is your fence? " << endl;
+    cin >> fencelength;
+    cout << "How many feet tall is your fence? " << endl;
+    cin >> fenceheight;
+    cout << "How many coats will you use? " << endl;
+    cin >> coats;
+    double gallonstotal = (fenceheight * fencelength * coats) / ftpergallon;
     cout << "You will need this many gallons of paint to paint the fence: " << gallonstotal;
-
+    
 
 
     
